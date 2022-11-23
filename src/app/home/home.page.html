@@ -1,0 +1,24 @@
+<ion-header class="header">
+  <ion-toolbar>
+    <ion-title>{{ nama }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card *ngFor="let data of dataMhs">
+    <ion-card-header>
+      <ion-card-title>{{data.nama}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{data.alamat}}</p>
+      <p>{{data.NIM}}</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-item class="logout" (click)="tambahMhs()">
+    <ion-icon slot="start" ios="exit-outline" md="exit-sharp"></ion-icon>
+    <ion-label>tambah mahasiswa</ion-label>
+  </ion-item>
+  <ion-item class="logout" (click)="logout()">
+    <ion-icon slot="start" ios="exit-outline" md="exit-sharp"></ion-icon>
+    <ion-label>Logout</ion-label>
+  </ion-item>
+</ion-content>

@@ -1,0 +1,10 @@
+{
+  "name": "belajar-mobile-ionic",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}
